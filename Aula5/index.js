@@ -132,20 +132,52 @@
 // pessoa(saudacao)
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-class Pessoa {
-    constructor(nome) {
-        this.nome = nome
-        this.email = ""
+// class Pessoa {
+//     constructor(nome) {
+//         this.nome = nome
+//         this.email = ""
+//     }
+// }
+
+// const pessoa = new Pessoa("Ale")
+// console.log(pessoa)
+// console.log(pessoa.nome)
+
+// class Pessoa {
+//     constructor(nome) {
+//         this._nome= nome
+//     }
+
+//     get nome() {
+//         return this._nome
+//     }
+
+//     saudacao() {
+//         console,log(`Olá, ${this._nome}`)
+//     }
+
+//     static qualClasseSou() {
+//         console.log("Sou a classe Pessoa ")
+//     }
+// }
+
+// Pessoa.qualClasseSou()
+// let pessoa = new Pessoa("Ale")
+// console.log(pessoa)
+// console.log(pessoa.nome)
+// pessoa.saudacao()
+
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+class Carro {
+    constructor(marca) {
+        this.marca = marca
     }
 }
 
-const pessoa = new Pessoa("Ale")
-console.log(pessoa)
-console.log(pessoa.nome)
-
-
-
-//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+class SUV extends Carro {
+    constructor()
+}
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
